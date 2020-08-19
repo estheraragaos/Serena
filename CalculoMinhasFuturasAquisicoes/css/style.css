@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #CA609C;
+    color: white;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+}
+
+
+/*Código para fixar footer no fim da página*/
+html {
+    height: 100%;
+}
+  
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.content {
+    flex: 1;
+}
+/*Fim do código para fixar footer no fim da página*/
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+.menu {
+    align-items: center;
+    background-color: #1A6EB7;
+    box-shadow: 10px 10px 20px -20px grey;
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+}
+
+.menu_usuario {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+}
+
+.menu_imagem {
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    margin: .6rem;
+    padding: .1rem;
+    width: 2.5rem;
+}
+
+
+/*Animação para a lista de tarefas subir quando a página é aberta*/
+.content {
+    margin-top: 100px;
+    opacity: 0;
+    animation: linear forwards 1.5s 1s animacaoLista;
+}
+
+@keyframes animacaoLista {
+
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+/*Fim da animação*/
+
+
+.bloco_imagem_topo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.imagem_topo{
+    width: 24rem;
+    max-width: 100%;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.titulo strong {
+    color:#1A6EB7;
+}
+
+.bloco_principal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.bloco_textos {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding-left: 5rem;
+    text-align: center;
+}
+
+.bloco_textos_1 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.bloco_textos_2 {
+    font-size: .9rem;
+    text-align: center;
+}
+
+.bloco_textos_2_imagem{
+    width: 90%;
+}
+
+.bloco_secundario {
+    margin: 0 auto;
+    padding-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entrada_produto {
+    max-width: 30%;
+    margin-top: 1.5rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: none;
+    padding: 10px;
+    outline: none;
+    font-size: .8rem;
+    color: white;
+}
+
+.entrada_produto::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.botao {
+    color: white;
+    cursor: pointer;
+    background-color: #1A6EB7;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px -20px grey;
+    font-size: .6rem;
+    letter-spacing: .1rem;
+    margin-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    text-transform: uppercase;
+}
+
+.creditos {
+    background-color: #1A6EB7;
+    box-shadow: 10px 10px 20px -20px grey;
+    font-size: 10px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+    .bloco_principal {
+        flex-direction: column;
+    }
+
+    .bloco_imagem_topo {
+        max-width: 80%;
+    }
+
+    .bloco_textos {
+        max-width: 80%;
+        padding-left: 0;
+        padding-top: 3rem;
+    }
+
+    .bloco_textos_2_imagem {
+        max-width: 100%;
+    }
+    
+
+    .entrada_produto {
+        max-width: 70%;
+    }
+}
+
