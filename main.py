@@ -10,15 +10,12 @@ bot = ChatBot(
 conversa = ListTrainer(bot)
 conversa.train([
     'Oi!',
-    'Como vc está?',
-    'Tudo bem e vc?',
-    'Ótima!',
-    'Me fale seu nome!',
-    'Eu me chamo Serena, e vc?',
+    'Oi! Eu me chamo Serena, a assistente que vai mudar sua relação com o Serasa e deixar sua vida financeira do meu jeitinho: Serena!  E vc?',
+    'Eu me chamo',
     'Prazer em te conhecer',
-    'Em que posso te ajuda?',
-    'Quero controlar meus gastos',
-    'Fique tranquilo que te trarei toda minha serenidade!'
+    'Preciso de ajuda',
+    'Em que posso te ajudar?',
+    'Quero controlar meus gastos'
 
 ])
 while True:
