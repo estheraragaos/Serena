@@ -1,0 +1,15 @@
+Documentação backend chatbot:
+
+Ferramentas necessárias para a execução do código:
+Python versão 3.7.9
+Biblioteca chatterbot do python.
+Editor de texto compatível com python.
+
+O código conta com uma lista de possibilidades em que
+o bot é treinado, essa lista é variável conforme a aplicação, utilizando dos recursos da biblioteca Chatterbot é possível criar um banco de dados para armazenar as respostas afim de otimizar
+o treinamento da Serena.
+
+Utilizando funções da biblioteca mencionada acima, é possível captar a resposta do usuário e definir um "grau de acertibilidade" para o bot,
+em nossa aplicação, foi escolhido o grau de 0.5, com base nesse grau a "Serena" é capaz de definir qual das respostas se encaixa mais a sua lista de treinamento.
+
+O grau de dificuldade dessa aplicação é alta considerando as infinitas possibilidades que podem ocorrer, por isso, é necessário treina-la repetidas vezes.
