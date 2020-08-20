@@ -17,3 +17,15 @@ pip3 install chatterbot
 ```
 python main.py
 ```
+## Participantes 👩
+```
+Carolina de Farias
+Eula Paula Pereira
+Esther Aragão
+Gabriele Andrade
+Leidiane Campos
+Lívia Zeviani 
+Reginaldo
+Samantha Nogueira
+
+```
